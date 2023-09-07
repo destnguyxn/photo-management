@@ -1,8 +1,7 @@
 "use client";
 
-import { CldImage } from "next-cloudinary";
-import { CldUploadButton } from "next-cloudinary";
-import { useState } from "react";
+import {CldImage, CldUploadButton} from "next-cloudinary";
+import {useState} from "react";
 
 export type UploadResult = {
   info: {
@@ -10,7 +9,6 @@ export type UploadResult = {
   };
   event: "success";
 };
-
 export default function Home() {
   const [imageId, setImageId] = useState("");
 
@@ -20,7 +18,7 @@ export default function Home() {
         onUpload={(result: UploadResult) => {
           setImageId(result.info.public_id);
         }}
-        uploadPreset="giomsr4s"
+        uploadPreset="nmdr2f41"
       />
 
       {imageId && (

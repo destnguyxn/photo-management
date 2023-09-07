@@ -1,14 +1,14 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { CldImage } from "next-cloudinary";
-import { useState } from "react";
+import {Button} from "@/components/ui/button";
+import {Input} from "@/components/ui/input";
+import {Label} from "@/components/ui/label";
+// import { CldImage } from "next-cloudinary";
+import {useState} from "react";
 
 export default function EditPage({
-  searchParams: { publicId },
-}: {
+                                   searchParams: {publicId},
+                                 }: {
   searchParams: {
     publicId: string;
   };
@@ -66,7 +66,7 @@ export default function EditPage({
           </Button>
         </div>
 
-        <div className="grid grid-cols-2 gap-12">
+        {/* <div className="grid grid-cols-2 gap-12">
           <CldImage src={publicId} width="400" height="300" alt="some image" />
 
           {transformation === "generative-fill" && (
@@ -121,7 +121,7 @@ export default function EditPage({
               alt="some image"
             />
           )}
-        </div>
+        </div>*/}
       </div>
     </section>
   );
